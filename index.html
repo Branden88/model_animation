@@ -9,16 +9,7 @@
   </head>
   <body>
     <!-- <model-viewer> HTML element -->
-    <model-viewer src="model.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.png" shadow-intensity="1.48" auto-rotate shadow-softness="1">
-      <button class="Hotspot" slot="hotspot-2" data-position="0.012016866559960246m 0.0005763273752966824m -0.004138215716990205m" data-normal="1.1102230246251568e-16m -0.23250587354569013m 0.9725949921559105m" data-visibility-attribute="visible" onMouseOver="removehotspot1()">
-          <div class="HotspotAnnotation" id="hotspot1" style="visibility;hidden">Lock Button</div>
-
-      </button><button class="Hotspot" slot="hotspot-3" data-position="0.0017778343836916347m 0.0007851465105584371m -0.00877812791487144m" data-normal="-0.1398288909867947m 0.0000011010932812313692m -0.9901756820101123m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation">Gasket</div>
-      </button><button class="Hotspot" slot="hotspot-4" data-position="0.004728350100889574m 0.0011892097890625689m -0.010971086412823374m" data-normal="0.00126633166011246m -0.6821909557547748m -0.7311729592172521m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation">Hinge
-          </div>
-      </button>
+    <model-viewer src="function.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.png" shadow-intensity="1" autoplay auto-rotate camera-orbit="149.6deg 69.85deg 0.03535m" field-of-view="30deg">
       <div class="progress-bar hide" slot="progress-bar">
           <div class="update-bar"></div>
       </div>
@@ -28,27 +19,7 @@
       <div id="ar-prompt">
           <img src="ar_hand_prompt.png">
       </div>
-    </model-viewer>
-
-<script>
-                        function addhotspot1(){
-                                 document.getElementByld
-("hotspot1").style.visibility="visible"
-                        }
-                        function removehotspot1(){
-                                 document.getElementByld
-("hotspot1").style.visibility="hidden";
-                        }
-                        function addhotspot2(){
-                                 document.getElementByld
-("hotspot2").style.visibility="visible";
-                        }  
-                        function removehotspot2(){
-                                 document.getElementByld
-("hotspot2").style.visibility="hidden";
-                        }
-</script>
-
+    </model-viewer>  
     <script src="script.js"></script>
     <!-- Loads <model-viewer> for browsers: -->
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
